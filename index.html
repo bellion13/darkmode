@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <title>Dark Mode</title>
+</head>
+
+<body>
+    <h1>Dank Light toggle</h1>
+    <img id="icon" class="img" src="./assets/img/moon.png" alt="">
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick = function() {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")) {      
+                icon.src = "./assets/img/sun.png";
+            }
+            else {
+                icon.src = "./assets/img/moon.png";
+            }
+        }
+    </script>
+</body>
+
+</html>

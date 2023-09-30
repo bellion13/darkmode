@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+:root {
+    --white-bgr-color: white;
+    --black-text-color: black;   
+}
+.dark-theme {
+    --black-bgr-color: black;
+    --white-text-color: white;
+}
+body {
+    background-color: var(--black-bgr-color);
+    color: var(--white-text-color);
+}
+#icon {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
