@@ -26,3 +26,19 @@ h1 {
     text-align: center;
     font-size: 50px;
 }
+.img {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    animation: img 2s linear infinite;
+}
+@keyframes img {
+    0% {
+        transform: rotate(0);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
